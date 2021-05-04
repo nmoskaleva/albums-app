@@ -11,7 +11,7 @@ export default function ImgDropzone({ onDrop, files }) {
   const thumbs = files.map((file) => (
     <div className={classes.thumb} key={file.name}>
       <div className={classes.thumbInner}>
-        <img src={file.preview} className={classes.img} />
+        <img src={file.preview} className={classes.img} alt='' />
       </div>
     </div>
   ));
